@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "137140758827",
+    "project_id": "pbl-goon",
+    "storage_bucket": "pbl-goon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137140758827:android:6035a152151cd20d4dfd6e",
+        "android_client_info": {
+          "package_name": "com.example.forusforearth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137140758827-ett43rt73g6g9nl2cpebtgtblnqn3ef4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.forusforearth",
+            "certificate_hash": "4287768f2519dfdea1cc27690d51d5dbbf146165"
+          }
+        },
+        {
+          "client_id": "137140758827-l690kll06euhajkscatldao149e47d42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwq2NrlMyTUhAIYRwnFlneEkWBwcX_Dxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137140758827-l690kll06euhajkscatldao149e47d42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

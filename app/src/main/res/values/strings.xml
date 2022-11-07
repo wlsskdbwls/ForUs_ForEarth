@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">For us, For earth</string>
-    <string name="pcw">박채원</string>
+    <string name="박채원">박채원</string>
     <string name="이유진">이유진</string>
+    <string name="login">로그인</string>
 </resources>

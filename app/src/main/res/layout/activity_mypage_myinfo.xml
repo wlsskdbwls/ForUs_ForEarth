@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mypage_myinfo"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <!--더보기 시작-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="415dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더보기"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="170dp"/>
+        <ImageButton
+            android:id="@+id/back_myinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="32dp"/>
+    </FrameLayout>
+    <!--더보기 끝-->
+
+    <!--프로필 시작-->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="415dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle4"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="22dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="김슈니"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="125dp"/>
+    </FrameLayout>
+
+    <!--스크롤뷰 시작-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--비밀번호변경 시작-->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/change_pwd"
+                    android:layout_width="415dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/rectangle3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 변경"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="18dp"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow2"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="370dp"/>
+            </FrameLayout>
+            <!--비밀번호변경 끝-->
+
+            <!--휴대폰번호 시작-->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/phone"
+                    android:layout_width="415dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/rectangle3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="휴대폰 번호"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="18dp"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow2"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="370dp"/>
+            </FrameLayout>
+            <!--휴대폰번호 끝-->
+
+            <!--회원정보수정 시작-->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/edit_info"
+                    android:layout_width="415dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/rectangle3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="회원정보 수정"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="18dp"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow2"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="370dp"/>
+            </FrameLayout>
+            <!--회원정보수정 끝-->
+
+            <!--회원탈퇴 시작-->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/quit"
+                    android:layout_width="415dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/rectangle3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="회원 탈퇴"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="18dp"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow2"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="370dp"/>
+            </FrameLayout>
+            <!--회원탈퇴 끝-->
+
+        </LinearLayout>
+    </ScrollView>
+    <!--스크롤뷰 끝-->
+</LinearLayout>

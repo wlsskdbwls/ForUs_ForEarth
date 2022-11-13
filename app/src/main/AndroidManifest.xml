@@ -35,7 +35,7 @@
             android:name=".Mypage_myinfo"
             android:exported="false" />
         <activity
-            android:name=".Mypage_main"
+            android:name=".SigninActivity"
             android:exported="false" />
         <activity
             android:name=".CreateQR"
@@ -48,7 +48,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SigninActivity"
+            android:name=".MainActivity"
             android:exported="true">
             //앱 실행시 첫 화면이 로그인 화면
             <intent-filter>
@@ -62,7 +62,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Mypage_main"
             android:exported="true" />
     </application>
 

@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="270dp"
             android:src="@drawable/rectangle_b" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,12 +60,13 @@
 
 
         <!--스탬프 시작-->
+
         <ImageView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/rectangle_w"
+            android:layout_marginLeft="55dp"
             android:layout_marginTop="140dp"
-            android:layout_marginLeft="55dp" />
+            android:src="@drawable/rectangle_w" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -76,7 +78,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="현재 모은 스탬프"
+            android:text="현재 모은 포인트"
             android:layout_marginTop="185dp"
             android:layout_marginLeft="200dp"
             android:textSize="13dp"
@@ -86,12 +88,12 @@
             android:id="@+id/stamp_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4개"
+            android:text="500p"
             android:layout_marginTop="210dp"
             android:layout_marginLeft="220dp"
             android:textSize="32dp"
             android:textStyle="bold"
-            android:textColor="@color/black" />
+            android:textColor="#B2BFE7" />
         <!--스탬프 끝-->
 
         <!--히스토리 시작-->
@@ -135,17 +137,18 @@
             android:background="@drawable/plogging"
             android:layout_marginTop="287dp"
             android:layout_marginLeft="226dp"/>
+
         <Button
             android:id="@+id/plogging_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="플로깅하기"
-            android:background="#00ff0000"
-            android:layout_marginTop="273dp"
             android:layout_marginLeft="240dp"
+            android:layout_marginTop="273dp"
+            android:background="#00ff0000"
+            android:text="플로깅하기"
+            android:textColor="@color/black"
             android:textSize="15dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
     </FrameLayout>
     <!--히스토리 끝-->
 
@@ -162,7 +165,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!--플로깅 캠페인 시작-->
+            <!--환경 캠페인 시작-->
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -175,14 +178,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="플로깅 캠페인"
+                    android:text="환경 캠페인"
                     android:textStyle="bold"
                     android:textSize="17dp"
                     android:textColor="@color/black"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="16dp"/>
 
-                <!--플로깅 캠페인 사진 스크롤-->
+                <!--환경 캠페인 사진 스크롤-->
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -206,13 +209,13 @@
                             android:background="@drawable/campaign2" />
                     </LinearLayout>
                 </HorizontalScrollView>
-                <!--플로깅 캠페인 스크롤 뷰 끝-->
+                <!--환경 캠페인 스크롤 뷰 끝-->
 
             </FrameLayout>
-            <!--플로깅 캠페인 끝-->
+            <!--환경 캠페인 끝-->
 
 
-            <!--환경 소식 시작-->
+            <!--환경 기사 시작-->
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -225,7 +228,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="환경소식"
+                    android:text="환경 기사"
                     android:textStyle="bold"
                     android:textSize="17dp"
                     android:textColor="@color/black"
@@ -240,25 +243,29 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
+
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
+
                             <ImageButton
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="16dp"
                                 android:layout_marginTop="65dp"
                                 android:background="@drawable/news1" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="5dp"
                                 android:text="서울도심 쓰레기 함께 주워요…롯데백화점 '시티플로깅'"
                                 android:textColor="@color/black"
-                                android:textSize="12dp"
-                                android:layout_marginLeft="16dp"
-                                android:layout_marginTop="5dp"/>
+                                android:textSize="12dp" />
                         </LinearLayout>
+
                         <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -267,12 +274,57 @@
                             android:background="@drawable/news2" />
                     </LinearLayout>
                 </HorizontalScrollView>
-                <!--환경 소식 스크롤뷰 끝-->
+                <!--환경 기사 스크롤뷰 끝-->
 
             </FrameLayout>
-            <!--환경 소식 끝-->
+            <!--환경 기사 끝-->
 
         </LinearLayout>
     </ScrollView>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/bottom"
+            android:layout_width="410dp"
+            android:layout_height="59dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottom_red" />
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/earth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/earth"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/point"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/more"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </FrameLayout>
 </LinearLayout>

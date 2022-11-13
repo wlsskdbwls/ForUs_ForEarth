@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         // 로그아웃
-        logoutbutton.setOnClickListener {
+        /*logoutbutton.setOnClickListener {
             // 로그아웃하고 로그인 화면(SigninActivity)로 이동
             val intent = Intent(this, SigninActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
             auth?.signOut()
-        }
+        }*/
     }
 }

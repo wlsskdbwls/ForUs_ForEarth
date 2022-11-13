@@ -3,4 +3,7 @@
     <string name="박채원">박채원</string>
     <string name="이유진">이유진</string>
     <string name="login">로그인</string>
+    <string name="image_preiview">이미지 미리보기</string>
+    <string name="delete">사진사용</string>
+    <string name="image_page">(%d/%d)</string>
 </resources>

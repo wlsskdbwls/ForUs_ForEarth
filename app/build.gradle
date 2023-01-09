@@ -10,6 +10,7 @@ plugins {
 android {
     compileSdk 32
 
+
     defaultConfig {
         applicationId "com.example.forusforearth"
         minSdk 24
@@ -33,6 +34,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
 
     viewBinding{
         enabled true

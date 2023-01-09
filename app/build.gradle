@@ -65,4 +65,10 @@ dependencies {
     implementation "androidx.viewpager2:viewpager2:1.0.0-alpha01"
     implementation 'me.relex:circleindicator:2.1.6'
 
+    //네비게이션바를 위해 의존성 추가
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+
+
+
 }

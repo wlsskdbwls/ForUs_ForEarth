@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreMain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="670dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="414dp"
+                android:layout_height="68dp"
+                android:background="@drawable/rectangle59">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="스토어"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginLeft="133dp"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@drawable/cart" />
+            </LinearLayout>
+
+            <!--상품 첫 번째 줄 시작-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/y_garbage2"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/y_garbage_bag"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="190p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/y_garbage3"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/y_garbage_bag"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--상품 두두 번째 줄 시작-->
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/y_garbage5"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/y_garbage_bag"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/w_garbage10"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/w_garbage_bag"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="250p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--상품 세 번째 줄 시작-->
+            <!--상품 첫 번째 줄 시작-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/w_garbage20"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/w_garbage_bag"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="490p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/w_garbage50"
+                        android:layout_width="170dp"
+                        android:layout_height="170dp"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/w_garbage_bag"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="음식물 쓰레기 봉투(2L)"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1250p"
+                        android:textColor="@color/sora"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/bottom"
+        android:layout_width="430dp"
+        android:layout_height="59dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom" />
+
+    <ImageButton
+        android:id="@+id/whome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/whome"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/wreal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wreal"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/wkeep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wkeep"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/bproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bproduct"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/wcompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wcompany"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

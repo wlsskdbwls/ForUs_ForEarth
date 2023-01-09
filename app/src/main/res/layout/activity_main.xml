@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,6 +8,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
+
+<!--네비게이션바를 위한 -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu"/>
+
+    <!--네비게이션바를 위한 -->
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -69,18 +82,18 @@
             android:src="@drawable/rectangle_w" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/earth"
-            android:layout_marginTop="170dp"
-            android:layout_marginLeft="80dp"/>
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/fofo"
+            android:layout_marginTop="123dp"
+            android:layout_marginLeft="40dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="현재 모은 포인트"
-            android:layout_marginTop="185dp"
-            android:layout_marginLeft="200dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="210dp"
             android:textSize="13dp"
             android:textColor="@color/black" />
 
@@ -89,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="500p"
-            android:layout_marginTop="210dp"
+            android:layout_marginTop="200dp"
             android:layout_marginLeft="220dp"
             android:textSize="32dp"
             android:textStyle="bold"
@@ -134,7 +147,7 @@
             android:id="@+id/plogging_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/plogging"
+            android:background="@drawable/store"
             android:layout_marginTop="287dp"
             android:layout_marginLeft="226dp"/>
 
@@ -145,7 +158,7 @@
             android:layout_marginLeft="240dp"
             android:layout_marginTop="273dp"
             android:background="#00ff0000"
-            android:text="플로깅하기"
+            android:text="스토어"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold" />
@@ -154,10 +167,12 @@
 
 
     <ScrollView
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="50dp"
-        android:background="#F5F5F5">
+        android:background="#F5F5F5"
+        android:layout_marginBottom="50dp">
+
 
 
         <LinearLayout
@@ -217,6 +232,7 @@
 
             <!--환경 기사 시작-->
             <FrameLayout
+                android:id="@+id/article"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <ImageView
@@ -235,7 +251,7 @@
                     android:layout_marginTop="30dp"
                     android:layout_marginLeft="16dp"/>
 
-                <!--환경 소식 스크롤뷰 시작-->
+                <!--환경 기사 스크롤뷰 시작-->
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -267,6 +283,7 @@
                         </LinearLayout>
 
                         <ImageButton
+                            android:id="@+id/news2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="16dp"
@@ -275,56 +292,9 @@
                     </LinearLayout>
                 </HorizontalScrollView>
                 <!--환경 기사 스크롤뷰 끝-->
-
             </FrameLayout>
             <!--환경 기사 끝-->
-
         </LinearLayout>
     </ScrollView>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/bottom"
-            android:layout_width="410dp"
-            android:layout_height="59dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/bottom_red" />
-
-            <ImageButton
-                android:id="@+id/home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/home"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-            <ImageButton
-                android:id="@+id/camera"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/camera"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-            <ImageButton
-                android:id="@+id/earth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/earth"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-            <ImageButton
-                android:id="@+id/point"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/point"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-            <ImageButton
-                android:id="@+id/more"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/more"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-    </FrameLayout>
 </LinearLayout>
+

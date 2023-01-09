@@ -18,6 +18,12 @@
         android:theme="@style/Theme.ForUsForEarth"
         tools:targetApi="31">
         <activity
+            android:name=".StoreDetail"
+            android:exported="false" />
+        <activity
+            android:name=".StoreMain"
+            android:exported="false" />
+        <activity
             android:name=".History"
             android:exported="false">
             <meta-data
